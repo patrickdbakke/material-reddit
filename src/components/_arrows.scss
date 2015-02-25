@@ -1,0 +1,45 @@
+%arrow_before {
+    display: inline-block;
+    font: normal normal normal 14px/1 'Material-Design-Iconic-Font';
+    font-size: inherit;
+    speak: none;
+    text-rendering: auto;
+    font-size: 2em;
+    -webkit-font-smoothing: antialiased;
+    color: $grey;
+}
+
+.arrow {
+    background: transparent;
+    height: 2em;
+    width: 2em;
+    &.up:before, &.upmod:before {
+        content: "\f1b7";
+        text-align: center;
+        @extend %arrow_before;
+    }
+    &.upmod:before {
+        color: $green;
+    }
+    &.down:before, &.downmod:before {
+        content: "\f1b4";
+        font-size: 2em;
+        text-align: center;
+        @extend %arrow_before;
+    }
+    &.downmod:before {
+        color: $red-900;
+    }
+}
+
+.score.unvoted {
+    color: $grey;
+}
+
+.likes .score.likes {
+    color: $green;
+}
+
+.dislikes .score.dislikes {
+    color: $red-900;
+}

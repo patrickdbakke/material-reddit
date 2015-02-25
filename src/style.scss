@@ -1,0 +1,134 @@
+@import "shared/colors";
+@import "fonts/roboto";
+@import "fonts/material-icons";
+
+@import "components/tabmenu";
+@import "components/posts";
+@import "components/arrows";
+@import "components/sidenav";
+@import "components/submit";
+
+body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    font-family: Roboto;
+    font-weight: 300;
+    background: white;
+    font-size: 13px;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    font-family: Roboto;
+    font-weight: 300;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    left: -20em;
+    z-index: 1000;
+    width: 20em;
+    background: White;
+}
+
+#header:after {
+    position: fixed;
+    content: '';
+    height: 5em;
+    left: 0;
+    top: 0;
+    background: white;
+    z-index: -1;
+    right: 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+#jumpToContent:hover ~ #sr-header-area, #sr-header-area:hover {
+    left: 20em;
+}
+
+.content {
+    font-size: 1em;
+    z-index: 200;
+    margin: 0;
+    margin-top: 5em;
+    background: #cee3f8;
+    overflow: auto;
+}
+
+.side {
+    float: right;
+    background-color: white;
+    margin: 0px 5px 0 5px;
+    width: 30em;
+    z-index: 3000;
+    left: 100%;
+    position: absolute;
+}
+
+#header-bottom-right {
+    position: fixed;
+    top: 1.5em;
+    z-index: 100000;
+    right: 1em;
+    bottom: auto;
+    background: transparent;
+}
+
+#header-bottom-right .separator {
+    color: transparent;
+    margin: 0 .5em 0 .5em;
+}
+
+#header-bottom-left {
+    position: fixed;
+    left: 7em;
+    font-size: 1em;
+}
+
+#header .tabmenu {
+    margin: 0;
+    vertical-align: middle;
+}
+
+#header-img-a {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#jumpToContent {
+    position: fixed;
+    font-size: 2em;
+    top: 0;
+    left: 0;
+    height: 2.5em;
+    width: 2.5em;
+    margin: 0;
+    text-indent: -1000px;
+    overflow: hidden;
+}
+
+#jumpToContent:after {
+    background-image: url("//google.github.io/material-design-icons/navigation/svg/ic_menu_24px.svg");
+    content: '';
+    position: Absolute;
+    top: .75em;
+    left: .75em;
+    right: .75em;
+    bottom: .75em;
+    z-index: 3;
+    background-size: 100% auto;
+}
+
+.organic-listing {
+    border: none;
+    background: white;
+    margin: 1.5em;
+    border-radius: 2px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    background: white url(../snoo-upside-down.png) 15px top no-repeat;
+}

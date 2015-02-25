@@ -1,0 +1,55 @@
+.submit-text {
+    display: none;
+}
+
+.submit-link {
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    display: inline-block;
+    background: red;
+    font-size: 1.5em;
+    height: 1em;
+    width: 1em;
+    padding: 1em;
+    border-radius: 100em;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    .nub {
+        display: none;
+    }
+    .morelink {
+        background: transparent;
+        border: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        a {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 1000em;
+            color: transparent;
+            &:before {
+                content: "\f0fb";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                color: white;
+                font: normal normal normal 14px/1 'Material-Design-Iconic-Font';
+                vertical-align: middle;
+                text-align: center;
+                font-weight: 100 !important;
+                font-size: 1em;
+                line-height: 2em;
+            }
+        }
+    }
+}

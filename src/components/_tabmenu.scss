@@ -1,0 +1,125 @@
+$color_razzmatazz_approx: #e91e63;
+$color_apple_approx: #4caf50;
+$color_amber_approx: #ffc107;
+
+.tabmenu {
+    a {
+        &.choice {
+            position: relative;
+            font-size: 0.666em;
+            &:before {
+                font: normal normal normal 14px/1 'Material-Design-Iconic-Font';
+                speak: none;
+                text-rendering: auto;
+                vertical-align: bottom;
+                font-size: 2.25em;
+                position: absolute;
+                top: 1.2em;
+                left: 0;
+                width: 100%;
+                display: inline-block;
+                height: 1em;
+                line-height: 1em;
+                text-align: center;
+                content: "\f2e0";
+            }
+        }
+        &.choice[href$="/new/"]:before {
+            content: "\f0b4";
+        }
+        &.choice[href$="/rising/"]:before {
+            content: "\f08b";
+        }
+        &.choice[href$="/controversial/"]:before {
+            content: "\f083";
+        }
+        &.choice[href$="/top/"]:before {
+            content: "\f1d4";
+        }
+        &.choice[href$="/gilded/"]:before {
+            content: "\f078";
+        }
+        &.choice[href$="/gilded/"]:hover:before {
+            background-image: url("//i.imgur.com/o0uB1J0.jpg");
+            background-size: 1.5em auto;
+            content: '';
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+        &.choice[href$="/wiki/"]:before {
+            content: "\f028";
+        }
+        &.choice[href$="/ads/"]:before {
+            content: "\f169";
+        }
+        &.choice[href*="/comments/"]:before {
+            content: "\f0de";
+        }
+        &.choice:hover:before {
+            color: $deep-orange;
+        }
+        &.choice[href$="/new/"]:hover:before {
+            color: $blue;
+        }
+        &.choice[href$="/rising/"]:hover:before {
+            color: $red-a700;
+        }
+        &.choice[href$="/controversial/"]:hover:before {
+            color: $deep-purple;
+        }
+        &.choice[href$="/top/"]:hover:before {
+            color: $pink;
+        }
+        &.choice[href$="/wiki/"]:hover:before {
+            color: $green;
+        }
+        &.choice[href$="/ads/"]:hover:before {
+            color: $amber;
+        }
+        &.choice[href*="/comments/"]:hover:before {
+            color: $green;
+        }
+    }
+    li {
+        a {
+            color: $black;
+            background: transparent;
+            font-weight: 100;
+            padding: 5.5em .5em 1em .5em;
+            display: inline-block;
+            border: none;
+            min-width: 3em;
+            text-align: center;
+        }
+        &.selected a {
+            &.choice:before {
+                color: $deep-orange;
+            }
+            &.choice[href$="/new/"]:before {
+                color: $blue;
+            }
+            &.choice[href$="/rising/"]:before {
+                color: $red-a700;
+            }
+            &.choice[href$="/controversial/"]:before {
+                color: $deep-purple;
+            }
+            &.choice[href$="/top/"]:before {
+                color: $pink;
+            }
+            &.choice[href$="/gilded/"]:before {
+                background-image: url("//i.imgur.com/o0uB1J0.jpg");
+                background-size: 1.5em auto;
+                content: '';
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+            &.choice[href$="/wiki/"]:before {
+                color: $green;
+            }
+            &.choice[href$="/ads/"]:before {
+                color: $green;
+            }
+        }
+    }
+}

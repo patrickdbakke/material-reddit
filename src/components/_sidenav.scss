@@ -1,0 +1,74 @@
+#sr-more-link {
+    display: none;
+}
+
+#sr-header-area {
+    height: auto;
+    font-size: 1em;
+    width: 20em;
+    position: absolute;
+    top: 5em;
+    left: -20em;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transition: left .5s ease-in-out;
+}
+
+#sr-header-area > .width-clip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    font-size: 1em;
+    white-space: normal;
+    background: $white;
+}
+
+#sr-header-area > .width-clip .sr-list > .separator {
+    border-top: 1px solid #ccc;
+    width: 100%;
+    display: inline-block;
+    color: transparent;
+    line-height: 0;
+}
+
+#sr-header-area > .width-clip .dropdown.srdrop {
+    display: none;
+}
+
+.sr-list {
+    display: inline-block;
+    width: 100%;
+}
+
+.sr-list > div {
+    display: inline-block;
+}
+
+.sr-list .flat-list {
+    display: block;
+}
+
+.sr-list .flat-list li {
+    display: block;
+    font-size: 1em;
+    text-transform: none;
+}
+
+.sr-list .flat-list li a {
+    padding: .75em 1.5em;
+    display: block;
+}
+
+.sr-list .flat-list li:hover a {
+    background: #d5d5d5;
+    color: #2196F3;
+    text-decoration: none;
+}
+
+.sr-list .flat-list li .separator {
+    display: none;
+}
